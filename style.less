@@ -217,52 +217,22 @@ h1 {
   }
 }
 
-
-// TYPEWRITER
-
-
-
-
-.var-highlight{
-	// color: #3700B3;
-	color: #FFFFFF;
-}
-.string-highlight{
-	color: #BB86FC;
-}
-
-.fake {
-	color:black;
-	font-style: italic;
-}
-
-#typewriter{
-		font-size: 2em;
-		margin: 0;
-		font-family: "Ubuntu";
-
-		&:after{
-			content: "|";
-			animation: blink 100ms linear infinite alternate;
-		}
-}
-
-@-webkit-keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@-moz-keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-
 .blue {
 	color: #BB86FC;
+}
+
+@media(max-width: 854px){ 
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0;
+      }
+      
+      .sub-title {
+        font-size:.8rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-right: -16px;
+        margin-top: 12px
+      }
 }
