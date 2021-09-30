@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&100&200display=swap');
 
 // STATIC BACKGROUND //
 
@@ -302,4 +302,81 @@ h1 {
         width: 50px;
         z-index: 10;
       }
+    }
+
+    @media(min-width: 854px){ 
+
+    figure {
+        padding-right:300px;
+        padding-left:200px;
+    }
+
+}
+
+    .flex {
+        margin: 0;
+        display: flex;
+        border: 0;
+        margin-bottom: 2rem;
+
+      }
+      
+      .flex div:first-child {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        padding-left:50px;
+        padding-right:100px;
+      }
+
+      .flex div:last-child {
+        margin: 2rem;
+        flex: 2;
+      }
+
+      .flex h3 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-top: 0;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Ubuntu';
+
+      }
+      .flex p {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.4;
+        font-weight: 100;
+        text-align: left;
+      }
+      
+      .flex p:last-of-type {
+        margin-bottom: 0;
+      }
+      
+      .flex:first-of-type div:first-child {
+        background-image: url("./img/onlysurf1.png");
+         -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
+         mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
+      }
+
+      .flex:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      @media all and (max-width: 600px) {
+        .flex div { flex: 1 !important; }
+      }
+
+      @media all and (max-width: 400px) {
+        .flex { flex-direction: column; } 
+        .flex div:first-child { min-height: 200px; }
+      }
+      
+    .chocolat-parent {
+        -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+        mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+    
     }
