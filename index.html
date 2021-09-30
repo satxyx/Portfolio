@@ -11,29 +11,52 @@
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <script src="https://use.fontawesome.com/303a7c1a29.js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
 
 </head>
 <body>
 
 <center>
-<main  class="wrapper" id="grained">
 
-    <div>
-        <h1>Hi, I'm <span class="blue">Satya;</span><br>
-        creative front-end <span class="blue">developer.</span></h1>
-
-        <div class="sub-title">satya@sette.digital</div> 
-        <br>
-
-                <div>
-                    <a href="https://github.com/xsatyax"><i class="fa fa-github fa-3x icon-3d"></i></a>
-                    <a href="https://www.linkedin.com/in/satyasette/"><i class="fa fa-linkedin fa-3x icon-3d"></i></a>
+    <div id="fullpage">
+        <main  class="wrapper" id="grained">
+            <div class="section">
+                
+                <h1>Hi, I'm <span class="blue">Satya;</span><br>
+                    creative front-end <span class="blue">developer.</span></h1>
+            
+                    <div class="sub-title">
+                        satya@sette.digital
+                    </div> 
+                    
+                    <br>
+            
+                            <div>
+                                <a href="https://github.com/xsatyax"><i class="fa fa-github fa-3x icon-3d"></i></a>
+                                <a href="https://www.linkedin.com/in/satyasette/"><i class="fa fa-linkedin fa-3x icon-3d"></i></a>
+                            </div>
                 </div>
-              
-        </div>   
 
+            <div class="section">
+                <h1>Peep my</span><br>
+                    full-stack <span class="blue">projects...</span></h1>
+            </div>
+
+            <div class="section">
+                <h1><span class="blue">(coming soon...)</span></h1>
+            </div>
+
+        </main>
     </div>
-</main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
