@@ -76,9 +76,9 @@
   z-index:50;
 }
 
-/* .glider-prev {
+ .glider-prev {
   visibility: hidden;
-} */
+} 
 
 .glider-next.disabled,
 .glider-prev.disabled {
