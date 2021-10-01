@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&100&200display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100&family=Playfair+Display:wght@600;800&display=swap');
 // STATIC BACKGROUND //
 
 * {box-sizing: border-box;}
@@ -32,6 +34,7 @@ h1 {
   font-size: 5rem;
   line-height: 1;
   margin: 0;
+  font-family: 'lato';
 }
 
 .sub-title {
@@ -301,6 +304,8 @@ h1 {
         left: 40px;
         width: 50px;
         z-index: 10;
+        text-align: left;
+
       }
     }
 
@@ -309,74 +314,103 @@ h1 {
     figure {
         padding-right:300px;
         padding-left:200px;
+        margin-right: 100px;
+        margin-left: 100px;
+        text-align: left;
     }
 
 }
 
-    .flex {
-        margin: 0;
-        display: flex;
-        border: 0;
-        margin-bottom: 2rem;
 
-      }
+
+
+    // .flex {
+    //     margin: 0;
+    //     display: flex;
+    //     border: 0;
+    //     margin-bottom: 2rem;
+    //     padding-right: 100px
+
+    //   }
       
-      .flex div:first-child {
-        flex: 1;
-        background-size: cover;
-        background-position: center;
-        padding-left:50px;
-        padding-right:100px;
-      }
+    //   .flex div:first-child {
+    //     flex: 1;
+    //     background-size: cover;
+    //     background-position: center;
+    //     padding-left:50px;
+    //     padding-right:100px;
+    //   }
 
-      .flex div:last-child {
-        margin: 2rem;
-        flex: 2;
-      }
+    //   .flex div:last-child {
+    //     margin: 2rem;
+    //     flex: 2;
+    //   }
 
       .flex h3 {
-        font-size: 2rem;
+        font-size: 2.3rem;
         letter-spacing: 2px;
         margin-top: 0;
         font-weight: 400;
         text-align: left;
-        font-family: 'Ubuntu';
+        font-family: 'lato';
 
       }
+
       .flex p {
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+        font-size: 1.3rem;
+        // text-transform: uppercase;
+        font-family: lato;
+        letter-spacing: 2px;
         line-height: 1.4;
         font-weight: 100;
         text-align: left;
       }
-      
-      .flex p:last-of-type {
-        margin-bottom: 0;
-      }
-      
-      .flex:first-of-type div:first-child {
-        background-image: url("./img/onlysurf1 copy.png");
-         -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
-         mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
-      }
 
-      .flex:nth-child(odd) {
-        flex-direction: row-reverse;
-      }
-
-      @media all and (max-width: 600px) {
-        .flex div { flex: 1 !important; }
-      }
-
-      @media all and (max-width: 400px) {
-        .flex { flex-direction: column; } 
-        .flex div:first-child { min-height: 200px; }
+      .blue {
+        font-weight: bold;
       }
       
-    // .chocolat-parent {
-    //     -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
-    //     mask-image: linear-gradient(to bottom, transparent 25%, #bb85fc 75%);
-    
-    // }
+    //   .flex p:last-of-type {
+    //     margin-bottom: 0;
+    //   }
+      
+      // .flex:first-of-type div:first-child {
+      //   background-image: url("./img/onlysurf1 copy.png");
+      //    -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
+      //    mask-image: linear-gradient(to bottom, transparent 25%, black 65%);
+      // }
+
+      // .flex:nth-child(odd) {
+      //   flex-direction: row-reverse;
+      // }
+
+      // @media all and (max-width: 600px) {
+      //   .flex div { flex: 1 !important; }
+      // }
+
+      // @media all and (max-width: 400px) {
+      //   .flex { flex-direction: column; } 
+      //   .flex div:first-child { min-height: 200px; }
+      // }
+      
+.c-img {
+  align-items: center;
+  border-radius: 80px;
+  width: 80px;
+  height:80px;
+}
+
+.chocolat-image {
+  border: #BB86FC;
+  border-radius: 150px;
+
+}
+
+.chocolat-parent {
+  border-radius: 150px;
+
+}
+
+.sec2 {
+  text-align: right;
+}
