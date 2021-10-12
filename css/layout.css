@@ -364,6 +364,7 @@
 /* 4. About */
 .section.about .row {
 	padding: 25px 0 55px 0;
+	background-image: url('img/background3.png');
 }
 
 @media (max-width: 1079px) {
