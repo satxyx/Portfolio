@@ -13,6 +13,16 @@
 	
 	<!-- Load Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7CMontserrat:400,700%7CEczar:400,500,600,700,800" rel="stylesheet">
+
+	<!-- Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X1KEETYQCQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X1KEETYQCQ');
+    </script>
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/basic.css" />
@@ -109,7 +119,7 @@
 
 								</div>
 								<center>
-								<div>
+								<div class="github">
 									<a href="https://github.com/xsatyax"><i class="fa fa-github fa-3x icon-3d" width="100px"></i></a>
 
 									<a href="https://www.linkedin.com/in/satyasette/"><i class="fa fa-linkedin fa-3x icon-3d"></i></a>
@@ -409,11 +419,19 @@
 	<script src="js/magnific-popup.js"></script>
 	<script src="js/scrollreveal.js"></script>
 	<script src="js/jquery.mb.YTPlayer.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/typed.js"></script>
 	
 	<!-- Main Scripts -->
 	<script src="js/main.js"></script>
-	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+	<script>
+
+		gsap.from('.intro', { opacity: 0, duration: 2, y: -50, ease: 'Power2.easeInOut' })
+		gsap.from('.email', { opacity: 0, duration: 2, y: -50, ease: 'Power2.easeInOut' })
+		gsap.from('.github', { opacity: 0, duration: 2, y: -50, ease: 'Power2.easeInOut' })
+
+	</script>
+	 
 </body>
 </html>
