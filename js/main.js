@@ -1,7 +1,4 @@
-/**
-*	Hendrie (HTML)
-*	Copyright © Hendrie by beshleyua. All Rights Reserved.
-**/
+
 
 $(function () {
 	'use strict';
